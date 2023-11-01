@@ -1,0 +1,12 @@
+.docs-doc-id-place-order-sidebar img[alt='VCT Place Order Sidebar Logo'] {
+}
+
+.docs-doc-id-place-order-sidebar img[alt='Desktop view before'],
+.docs-doc-id-place-order-sidebar img[alt='Desktop view after'] {
+    width: 1080px;
+}
+
+.docs-doc-id-place-order-sidebar img[alt='Mobile view before'],
+.docs-doc-id-place-order-sidebar img[alt='Mobile view after'] {
+    width: 768px;
+}

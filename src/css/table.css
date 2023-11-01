@@ -1,0 +1,30 @@
+table {
+    margin-top: 1rem;
+}
+
+table th {
+    display: none;
+}
+
+table td {
+    vertical-align: top;
+}
+
+table td:first-of-type {
+    background-color: var(--ifm-color-emphasis-100);
+    white-space: nowrap;
+}
+
+table thead tr {
+    border-bottom-width: 1px;
+}
+
+table tr:nth-child(2n) {
+    background: none;
+}
+
+@media screen and (max-width: 1440px) {
+    table tr:hover td {
+        background-color: var(--ifm-color-emphasis-100) !important;
+    }
+}

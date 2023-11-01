@@ -1,0 +1,38 @@
+.docs-doc-id-change-sku-dynamically img[alt='VCT Change SKU Dynamically Logo'] {
+}
+
+.docs-doc-id-change-sku-dynamically img[alt='Frontend selector devtools'] {
+    width: 500px;
+}
+
+.docs-doc-id-change-sku-dynamically img[alt='Selector validation in Admin'] {
+    width: 400px;
+}
+
+.docs-doc-id-change-sku-dynamically img[alt='Switch SKU'] {
+    width: 800px;
+}
+
+.docs-doc-id-change-sku-dynamically .table-of-contents > li > .table-of-contents__link[href^='#product-info-switcher'] {
+    color: transparent !important;
+    font-weight: 400 !important;
+    height: auto;
+    left: 50px;
+    min-height: 6.5rem;
+    padding: .75rem 1rem;
+}
+
+.docs-doc-id-change-sku-dynamically .table-of-contents__link[href^='#product-info-switcher']::before {
+    background: url('/img/docs/Vct_ProductInfoSwitcher-small.svg') no-repeat;
+    background-size: 5rem 5rem;
+    content: '';
+    display: block;
+    float: left;
+    height: 5rem;
+    margin-right: .75rem;
+    width: 5rem;
+}
+
+.sidebar-change-sku-dynamically .menu__link {
+    padding-right: .35rem;
+}
