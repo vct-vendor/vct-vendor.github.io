@@ -1,0 +1,37 @@
+.docs-doc-id-home h1 {
+    margin-top: 3rem !important;
+    text-align: center;
+}
+
+.docs-doc-id-home aside {
+    display: none !important;
+}
+
+.docs-doc-id-home main {
+}
+
+.docs-doc-id-home img {
+    margin: 0 2.5rem 3rem 2.5rem;
+    max-width: 11rem !important;
+}
+
+.docs-doc-id-home [class*='docMainContainer_'] {
+    max-width: 100%;
+}
+
+.docs-doc-id-home [class*='docItemCol_'] {
+    margin: 0 auto;
+    max-width: 100% !important;
+    padding: 0 1rem;
+}
+
+.docs-doc-id-home article p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4rem 0 0 0;
+}
+
+.docs-doc-id-home .col.col--3 {
+    display: none;
+}
