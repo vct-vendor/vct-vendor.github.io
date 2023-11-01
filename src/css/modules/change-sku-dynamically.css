@@ -1,0 +1,57 @@
+.docs-doc-id-change-sku-dynamically img[alt='VCT Change SKU Dynamically Logo'] {
+}
+
+.docs-doc-id-change-sku-dynamically img[alt='Frontend selector devtools'] {
+    width: 500px;
+}
+
+.docs-doc-id-change-sku-dynamically img[alt='Selector validation in Admin'] {
+    width: 400px;
+}
+
+.docs-doc-id-change-sku-dynamically img[alt='Switch SKU'] {
+    width: 800px;
+}
+
+.docs-doc-id-change-sku-dynamically .table-of-contents > li > .table-of-contents__link[href^='#product-info-switcher'] {
+    color: transparent !important;
+    font-weight: 400 !important;
+    height: auto;
+    left: 50px;
+    min-height: 6.5rem;
+    padding: .75rem 1rem;
+}
+
+.docs-doc-id-change-sku-dynamically .table-of-contents__link[href^='#product-info-switcher']::before {
+    background: url('/img/docs/Vct_ProductInfoSwitcher-small.svg') no-repeat;
+    background-size: 5rem 5rem;
+    content: '';
+    display: block;
+    float: left;
+    height: 5rem;
+    margin-right: .75rem;
+    width: 5rem;
+}
+
+.sidebar-change-sku-dynamically .menu__link {
+    padding-right: .35rem;
+}
+
+.sidebar-change-sku-dynamically .menu__link::after {
+    background-color: var(--ifm-magento);
+    border: 1px solid var(--ifm-magento-second);
+    border-radius: .2rem;
+    box-shadow: inset 0 -2px 0 var(--ifm-magento-second);
+    color: #fff;
+    content: 'Free';
+    line-height: 1.5;
+    margin-left: .35rem;
+    padding: 0 .35rem .1rem .35rem;
+}
+
+.sidebar-change-sku-dynamically .menu__link--active::after {
+    background-color: var(--ifm-color-secondary-contrast-background);
+    border-color: var(--ifm-color-emphasis-400);
+    box-shadow: inset 0 -2px 0 var(--ifm-color-emphasis-400);
+    color: var(--ifm-color-emphasis-600);
+}
