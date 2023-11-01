@@ -1,0 +1,10 @@
+@media print {
+    [class*='backToTopButtonShow_'],
+    [class*='buttonGroup_'] {
+        display: none !important;
+    }
+
+    [class*='docItemCol_'] {
+        padding: 0 !important;
+    }
+}

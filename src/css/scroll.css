@@ -1,0 +1,32 @@
+*::-webkit-scrollbar {
+    background-color: transparent !important;
+    height: var(--ifm-scrollbar-size);
+    width: var(--ifm-scrollbar-size);
+}
+
+*::-webkit-scrollbar-track {
+    background: none !important;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: transparent !important;
+    border-radius: 0 !important;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+    background-color: var(--ifm-color-emphasis-300) !important;
+}
+
+.thin-scrollbar {
+    scrollbar-width: inherit !important;
+}
+
+table::-webkit-scrollbar,
+.prism-code::-webkit-scrollbar {
+    background-color: var(--ifm-color-emphasis-200) !important;
+}
+
+table::-webkit-scrollbar-thumb,
+.prism-code::-webkit-scrollbar-thumb {
+    background-color: var(--ifm-color-emphasis-300) !important;
+}

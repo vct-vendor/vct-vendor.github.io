@@ -1,0 +1,7 @@
+.docs-doc-id-price-diff img[alt='VCT Price Diff Logo'] {
+}
+
+.docs-doc-id-price-diff img[alt='Before'],
+.docs-doc-id-price-diff img[alt='After'] {
+    width: 350px;
+}
