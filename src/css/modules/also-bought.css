@@ -1,0 +1,26 @@
+.docs-doc-id-also-bought img[alt='VCT Also Bought Logo'] {
+}
+
+.docs-doc-id-also-bought img[alt='Sidebar Main container'] {
+    max-width: 1000px;
+}
+
+.docs-doc-id-also-bought img[alt='Mini-cart Promotion container'] {
+    max-width: 700px;
+}
+
+.docs-doc-id-also-bought img[alt='Before Page Footer container'] {
+    max-width: 950px;
+}
+
+.docs-doc-id-also-bought img[alt='Related products block'] {
+    max-width: 700px;
+}
+
+.docs-doc-id-also-bought img[alt='Up-Sell products block'] {
+    max-width: 500px;
+}
+
+.docs-doc-id-also-bought img[alt='Cross-Sell products block'] {
+    max-width: 1100px;
+}

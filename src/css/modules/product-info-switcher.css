@@ -1,0 +1,27 @@
+.docs-doc-id-product-info-switcher img[alt='VCT Product Info Switcher Logo'] {
+}
+
+.docs-doc-id-product-info-switcher img[alt='Frontend selector devtools'] {
+    max-width: 700px;
+}
+
+.docs-doc-id-product-info-switcher img[alt='Selector validation in Admin'] {
+    max-width: 500px;
+}
+
+.docs-doc-id-product-info-switcher img[alt='Log'] {
+    max-width: 1250px;
+}
+
+.docs-doc-id-product-info-switcher img[alt='Page title'] {
+    max-width: 400px;
+}
+
+.docs-doc-id-product-info-switcher img[alt='Name, SKU, Availability etc'],
+.docs-doc-id-product-info-switcher img[alt='Description'],
+.docs-doc-id-product-info-switcher img[alt='Additional Attributes'],
+.docs-doc-id-product-info-switcher img[alt='Reviews, Submit Review form'],
+.docs-doc-id-product-info-switcher img[alt='Related products'],
+.docs-doc-id-product-info-switcher img[alt='Up-Sell products'] {
+    max-width: 750px;
+}

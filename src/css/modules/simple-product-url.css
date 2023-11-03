@@ -1,0 +1,10 @@
+.docs-doc-id-simple-product-url img[alt='VCT Simple Product URL Logo'] {
+}
+
+.docs-doc-id-simple-product-url img[alt='Redirect To Parent'],
+.docs-doc-id-simple-product-url img[alt='Add Options To URL'],
+.docs-doc-id-simple-product-url img[alt='Show Selected Variant URL'],
+.docs-doc-id-simple-product-url img[alt='Configurable product URL with selected options'],
+.docs-doc-id-simple-product-url img[alt='Selected product URL'] {
+    max-width: 800px;
+}

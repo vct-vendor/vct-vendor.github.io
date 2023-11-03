@@ -1,0 +1,18 @@
+*::-webkit-scrollbar {
+    background-color: var(--ifm-color-secondary-contrast-background);
+    height: var(--ifm-scrollbar-size);
+    width: var(--ifm-scrollbar-size);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--ifm-color-emphasis-400) !important;
+    border-radius: 0 !important;
+}
+
+*::-webkit-scrollbar-track {
+    background: none !important;
+}
+
+.thin-scrollbar {
+    scrollbar-width: inherit !important;
+}

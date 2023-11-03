@@ -1,0 +1,113 @@
+[class*='tocCollapsibleButton_'] {
+    background-color: var(--ifm-color-emphasis-200);
+    padding: .65rem .75rem !important;
+}
+
+.table-of-contents {
+    font-size: 90%;
+    margin: 0 !important;
+}
+
+[class*='tableOfContents_'] {
+    margin-bottom: 3rem;
+    margin-top: -1rem !important;
+    max-height: calc(100vh - var(--ifm-navbar-height)) !important;
+    top: var(--ifm-navbar-height) !important;
+}
+
+[class*='tocCollapsibleExpanded_'] ul,
+[class*='tableOfContents_'] ul {
+    border-left: 1px solid var(--ifm-color-emphasis-300);
+    margin-left: 1rem;
+    padding: 0;
+}
+
+[class*='tocCollapsibleExpanded_'] li {
+    margin: 0 !important;
+}
+
+.table-of-contents {
+    padding: 0;
+}
+
+[class*='tableOfContents_'] li {
+    margin: 0;
+}
+
+[class*='tocCollapsible_'] {
+    margin-top: 0 !important;
+}
+
+.table-of-contents__link,
+.table-of-contents__link kbd,
+.table-of-contents__link:hover {
+    color: var(--ifm-color-emphasis-700);
+}
+
+.table-of-contents__link {
+    line-height: 1.35;
+    padding: .35rem 0 .35rem 1rem;
+}
+
+.table-of-contents__link[href^='#use-'] {
+    background-color: var(--ifm-color-success-contrast-background) !important;
+    box-shadow: var(--ifm-global-shadow-lw);
+    font-weight: 400 !important;
+    height: auto;
+    left: 50px;
+    min-height: 6.5rem;
+    padding: .75rem 1rem;
+    text-transform: none !important;
+}
+
+.table-of-contents__link[href^='#use-']::before {
+    background: url('/img/docs/Vct_ProductInfoSwitcher-small.svg') no-repeat;
+    background-size: 5rem 5rem;
+    content: '';
+    display: block;
+    float: left;
+    height: 5rem;
+    margin-right: .75rem;
+    width: 5rem;
+}
+
+.docs-doc-id-change-sku-dynamically .table-of-contents > li:last-child > ul,
+.docs-doc-id-change-sku-dynamically .table-of-contents > li:last-child > ul a {
+    border: none !important;
+    margin: 0;
+}
+
+.table-of-contents__link[href^='#use-'].table-of-contents__link--active {
+    border-color: transparent !important;
+}
+
+.table-of-contents__link:hover {
+    background-color: var(--ifm-color-emphasis-100);
+}
+
+.table-of-contents__link--active {
+    background-color: var(--ifm-color-emphasis-200) !important;
+    border-left: var(--ifm-alert-border-left-width) solid var(--ifm-blockquote-border-color) !important;
+    padding-left: 11px;
+}
+
+.table-of-contents > li > .table-of-contents__link {
+    color: var(--ifm-color-emphasis-800) !important;
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
+}
+
+@media screen and (max-width: 996px) {
+    [class*='tocCollapsible_'] {
+        margin: 0 -.5rem .5rem -.5rem !important;
+    }
+
+    .table-of-contents {
+        background-color: var(--ifm-color-emphasis-200);
+        padding: 0 !important;
+    }
+
+    .table-of-contents__link {
+        padding: .5rem 0 .5rem 1rem;
+    }
+}

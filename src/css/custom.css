@@ -3,28 +3,392 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Condensed&display=swap');
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+    --ifm-alert-padding-vertical: 12px;
+    --ifm-background-color: var(--ifm-color-white);
+    --ifm-blockquote-border-left-width: var(--ifm-alert-border-left-width);
+    --ifm-code-font-size: 87.5% !important;
+    --ifm-color-content: var(--ifm-color-emphasis-900);
+    --ifm-color-primary: #0257d5;
+    --ifm-color-primary-dark: #0257d5;
+    --ifm-color-primary-darker: #0257d5;
+    --ifm-color-primary-darkest: #0257d5;
+    --ifm-color-primary-light: #0257d5;
+    --ifm-color-primary-lighter: #0257d5;
+    --ifm-color-primary-lightest: #0257d5;
+    --ifm-container-width-xl: auto;
+    --ifm-font-family-base: 'Roboto Condensed';
+    --ifm-font-family-monospace: 'Roboto Mono';
+    --ifm-font-weight-semibold: 400;
+    --ifm-footer-padding-vertical: .5rem !important;
+    --ifm-global-radius: none;
+    --ifm-heading-font-weight: var(--ifm-font-weight-bold);
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, .1);
+    --ifm-leading-desktop: 1;
+    --ifm-menu-color: var(--ifm-color-emphasis-700);
+    --ifm-navbar-height: 32px;
+    --ifm-navbar-item-padding-horizontal: 1rem;
+    --doc-sidebar-hidden-width: .75rem !important;
+    --doc-sidebar-width: 198px !important;
+    --ifm-table-border-color: var(--ifm-color-emphasis-300);
+    --ifm-table-cell-padding: .25rem .4rem;
+    --ifm-table-head-font-weight: 400;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    --ifm-background-color: #1e1f22 !important;
+    --docusaurus-collapse-button-bg: #2b2d30 !important;
+    --ifm-color-emphasis-100: #2b2d30 !important;
+    --ifm-color-emphasis-200: #2b2d30 !important;
+    --ifm-color-emphasis-300: #393b40 !important;
+    --ifm-color-emphasis-400: #585a5f !important;
+    --ifm-color-primary: #7fb2fe;
+    --ifm-color-primary-dark: #7fb2fe;
+    --ifm-color-primary-darker: #7fb2fe;
+    --ifm-color-primary-darkest: #7fb2fe;
+    --ifm-color-primary-light: #7fb2fe;
+    --ifm-color-primary-lighter: #7fb2fe;
+    --ifm-color-primary-lightest: #7fb2fe;
+    --ifm-color-secondary-contrast-background: #2b2d30 !important;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, .3);
+    --ifm-navbar-background-color: #1e1f22 !important;
+}
+
+[data-theme='dark'] [class*='codeBlockContainer_'],
+[data-theme='dark'] [class*='codeBlock_'] {
+    background-color: #393b40 !important;
+}
+
+[class*='codeBlockContainer_'],
+[class*='codeBlock_'] {
+    background-color: var(--ifm-color-emphasis-100) !important;
+}
+
+.token.comment {
+    color: #78756f !important;
+    font-style: normal !important;
+}
+
+input {
+    font-family: 'Roboto Condensed', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--ifm-color-emphasis-800) !important;
+    line-height: 1.25;
+    margin-top: .25rem;
+    padding: .5rem 0 0 0;
+}
+
+h1 {
+    margin: 0 0 .75rem 0 !important;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    margin: 2.75rem 0 .75rem 0 !important;
+}
+
+strong {
+    color: var(--ifm-color-emphasis-800) !important;
+}
+
+h2 kbd,
+h3 kbd,
+h4 kbd {
+    font-weight: var(--ifm-font-weight-bold);
+}
+
+h5 {
+    display: none;
+}
+
+h5 + * {
+    margin-top: 1rem;
+}
+
+h1 + p {
+    margin-bottom: 1.25rem !important;
+    margin-top: -.5rem;
+}
+
+h1 + p + p {
+    margin: 0 !important;
+}
+
+h1 + p + p [class*='img_'] {
+    float: left;
+    max-width: 150px !important;
+}
+
+h1 + p + p + ul {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 !important;
+    padding-left: .75rem;
+}
+
+h1 + p + p + ul li {
+    line-height: 2;
+    margin: 0 !important;
+}
+
+.alert a:hover {
+    text-decoration-thickness: 3px;
+}
+
+h1 {
+    font-size: 2.5rem !important;
+    --ifm-h1-font-size: 2rem !important;
+}
+
+h2 {
+    font-size: 2.25rem !important;
+    --ifm-h2-font-size: 1.75rem !important;
+}
+
+h3 {
+    font-size: 2rem !important;
+    --ifm-h3-font-size: 1.5rem !important;
+}
+
+h4 {
+    font-size: 1.75rem !important;
+    --ifm-h4-font-size: 1.25rem !important;
+}
+
+h5 {
+    font-size: 1.5rem !important;
+    --ifm-h5-font-size: 1rem !important;
+}
+
+article {
+    margin-bottom: 7rem;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1rem;
+}
+
+li ul {
+    list-style-type: circle;
+}
+
+.task-list-item ul {
+    padding-left: 2.25rem;
+}
+
+.task-list-item ul.contains-task-list {
+    padding-left: 1.25rem;
+}
+
+p + .contains-task-list {
+    margin-bottom: 2rem;
+    margin-top: -.75rem;
+}
+
+p + ul {
+    margin-top: -.75rem;
+}
+
+.theme-code-block + ul {
+    margin-top: 1rem !important;
+}
+
+blockquote {
+    padding-left: .75rem;
+}
+
+.theme-doc-breadcrumbs[class*='breadcrumbsContainer_'] {
+    display: none;
+}
+
+[class*='mainWrapper_'] .container {
+    margin: 0 !important;
+}
+
+.container {
+    max-width: 100%;
+}
+
+[class*='admonitionContent_'] [class*='codeBlockContainer_'] {
+    /* margin: 0 -.25rem 0 -.25rem !important; */
+}
+
+input[type='checkbox'] {
+    height: 26.4px !important;
+    margin: 0 .25rem 0 0 !important;
+    vertical-align: bottom !important;
+}
+
+.col--2 {
+    --ifm-col-width: calc(3 / 12 * 100%);
+    padding: 0;
+}
+
+.col--3 {
+    padding: 0;
+}
+
+.col--8 {
+    --ifm-col-width: calc(9 / 12 * 100%);
+    padding-bottom: 0;
+    padding-top: 1rem;
+}
+
+[class*='docItemCol_'] {
+    padding: 0 1rem 0 1.5rem;
+}
+
+.contains-task-list {
+    padding-left: 20px;
+}
+
+kbd {
+    background-color: var(--ifm-color-secondary-contrast-background) !important;
+    color: inherit !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 100%;
+    padding: .1rem .35rem;
+}
+
+[class*='codeBlockTitle_'] {
+    font-family: var(--ifm-font-family-monospace), serif;
+    padding: .5rem 1rem !important;
+}
+
+[class*='buttonGroup_'] {
+    right: 0 !important;
+    top: 0 !important;
+}
+
+[class*='buttonGroup_'] button {
+    background-color: transparent !important;
+    border: none !important;
+    opacity: .5 !important;
+    padding: .5rem !important;
+}
+
+[class*='details_'] {
+    border: none !important;
+}
+
+[class*='collapsibleContent_'] {
+    border-top: none !important;
+    margin-top: 0 !important;
+}
+
+[class*='codeBlockContainer_'] {
+    border: 1px solid var(--ifm-color-emphasis-300);
+    box-shadow: none !important;
+}
+
+[class*='copyButtonSuccessIcon_'] {
+    color: var(--ifm-color-success-dark) !important;
+}
+
+code {
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 0 .3rem;
+    vertical-align: unset;
+}
+
+[class*='admonitionIcon_'] {
+    margin-right: .25rem !important;
+}
+
+[class*='admonitionIcon_'] svg {
+    height: 26.4px;
+    margin-left: -.1rem;
+    opacity: .75;
+    vertical-align: text-bottom;
+    width: 26.4px;
+}
+
+[class*='admonitionHeading_'] {
+    font-size: 100% !important;
+    font-weight: var(--ifm-font-weight-normal) !important;
+    line-height: var(--ifm-line-height-base) !important;
+    margin: 0 !important;
+    text-transform: none !important;
+}
+
+[class*='admonition_'] {
+    padding: .6rem .75rem .75rem .75rem;
+}
+
+.alert--info > [class*='admonitionHeading_'],
+.alert--secondary > [class*='admonitionHeading_'] {
+    display: none;
+}
+
+[class*='codeBlockLines_'] {
+    padding: .5rem 1rem !important;
+}
+
+.theme-code-block-highlighted-line {
+    background-color: var(--ifm-color-emphasis-200) !important;
+}
+
+.container[class*='docItemWrapperEnhanced_'] {
+    max-width: 100% !important;
+}
+
+[class*='docMainContainer_'] .container {
+    padding: 0 !important;
+}
+
+[class*='docMainContainer_'] .container .row {
+    margin: 0;
+}
+
+.hash-link {
+    font-weight: var(--ifm-font-weight-normal);
+    padding-left: .25rem !important;
+}
+
+.markdown li {
+    margin-top: var(--ifm-list-item-margin);
+}
+
+[class*='backToTopButton_'] {
+    height: 2rem !important;
+    width: 2rem !important;
+}
+
+@media screen and (max-width: 996px) {
+    [class*='docItemCol_'] {
+        padding: 0 .5rem !important;
+    }
+
+    .col--8 {
+        --ifm-col-width: 100% !important;
+    }
+
+    [class*='admonition_'] {
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    img {
+        max-width: 100% !important;
+    }
 }
