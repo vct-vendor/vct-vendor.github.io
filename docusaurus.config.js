@@ -15,6 +15,10 @@ const config = {
     title: 'VCT',
     trailingSlash: false,
     url: 'https://vct-vendor.github.io',
+    staticDirectories: [
+        'public',
+        'static',
+    ],
     i18n: {
         defaultLocale: 'en',
         locales: ['en'],
@@ -57,13 +61,16 @@ const config = {
                     containerId: 'GTM-W65NLPHF',
                 },
                 gtag: {
-                    trackingID: 'G-Y2X91ZZST',
+                    trackingID: 'G-Y2X91ZZSTX',
                     anonymizeIP: true,
                 },
                 sitemap: {
                     changefreq: 'daily',
                     priority: 0.5,
-                    ignorePatterns: ['/tags/**'],
+                    ignorePatterns: [
+                        '/tags/**',
+                        '/pdf/**',
+                    ],
                     filename: 'sitemap.xml',
                 },
             },
@@ -206,8 +213,13 @@ const config = {
                     position: 'left',
                 },
                 {
+                    label: 'Support',
+                    href: 'mailto:vct.vendor@gmail.com?subject=Support',
+                    position: 'left',
+                },
+                {
                     label: 'Contact',
-                    to: 'mailto:vct.vendor@gmail.com?subject=Contact',
+                    href: 'mailto:vct.vendor@gmail.com?subject=Contact',
                     position: 'left',
                 },
                 {
@@ -248,8 +260,13 @@ const config = {
                             to: '/feature',
                         },
                         {
+                            label: 'Support',
+                            href: 'mailto:vct.vendor@gmail.com?subject=Support',
+                            position: 'left',
+                        },
+                        {
                             label: 'Contact',
-                            to: 'mailto:vct.vendor@gmail.com?subject=Contact',
+                            href: 'mailto:vct.vendor@gmail.com?subject=Contact',
                         },
                     ],
                 },

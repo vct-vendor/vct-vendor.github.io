@@ -14,8 +14,6 @@
 
 .menu__list .sidebar-faq a,
 .menu__list .sidebar-privacy-policy a {
-    /* background-color: var(--ifm-color-success-contrast-background) !important; */
-    /* color: var(--ifm-color-success-contrast-foreground); */
     display: none;
 }
 
@@ -29,9 +27,10 @@
     max-width: 100% !important;
 }
 
-/* .menu__list li:first-child .menu__link--active {
-    border-right: var(--ifm-alert-border-left-width) solid var(--ifm-color-success-dark) !important;
-} */
+.menu__link--active:not(.menu__link--sublist) {
+    background-color: var(--ifm-color-emphasis-200);
+}
+
 .menu__list-item {
     margin: 0 !important;
 }
@@ -44,7 +43,7 @@
     border-radius: 0;
     border-right: var(--ifm-alert-border-left-width) solid transparent !important;
     color: var(--ifm-color-emphasis-800);
-    line-height: 1.4;
+    line-height: 1.75;
     padding: .45rem .75rem;
 }
 

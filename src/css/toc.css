@@ -46,39 +46,13 @@
 
 .table-of-contents__link {
     line-height: 1.35;
-    padding: .35rem 0 .35rem 1rem;
-}
-
-.table-of-contents__link[href^='#use-'] {
-    background-color: var(--ifm-color-success-contrast-background) !important;
-    box-shadow: var(--ifm-global-shadow-lw);
-    font-weight: 400 !important;
-    height: auto;
-    left: 50px;
-    min-height: 6.5rem;
-    padding: .75rem 1rem;
-    text-transform: none !important;
-}
-
-.table-of-contents__link[href^='#use-']::before {
-    background: url('/img/docs/Vct_ProductInfoSwitcher-small.svg') no-repeat;
-    background-size: 5rem 5rem;
-    content: '';
-    display: block;
-    float: left;
-    height: 5rem;
-    margin-right: .75rem;
-    width: 5rem;
+    padding: .5rem 0 .5rem 1rem;
 }
 
 .docs-doc-id-change-sku-dynamically .table-of-contents > li:last-child > ul,
 .docs-doc-id-change-sku-dynamically .table-of-contents > li:last-child > ul a {
     border: none !important;
     margin: 0;
-}
-
-.table-of-contents__link[href^='#use-'].table-of-contents__link--active {
-    border-color: transparent !important;
 }
 
 .table-of-contents__link:hover {
@@ -92,14 +66,12 @@
 }
 
 .table-of-contents > li > .table-of-contents__link {
-    color: var(--ifm-color-emphasis-800) !important;
-    /* font-weight: bold; */
-    /* text-transform: uppercase; */
+    color: var(--ifm-color-emphasis-900) !important;
 }
 
 @media screen and (max-width: 996px) {
     [class*='tocCollapsible_'] {
-        margin: 0 -.5rem .5rem -.5rem !important;
+        margin: 0 0 .5rem -.5rem !important;
     }
 
     .table-of-contents {

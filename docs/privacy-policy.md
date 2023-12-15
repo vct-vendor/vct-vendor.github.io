@@ -1,6 +1,6 @@
 ---
 sidebar_class_name: sidebar-privacy-policy
-image: ../static/img/logo.svg
+image: /img/logo.svg
 ---
 
 # Privacy Policy

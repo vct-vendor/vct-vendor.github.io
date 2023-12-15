@@ -1,10 +1,7 @@
 .docs-doc-id-product-info-switcher img[alt='VCT Product Info Switcher Logo'] {
 }
 
-.docs-doc-id-product-info-switcher img[alt='Frontend selector devtools'] {
-    max-width: 700px;
-}
-
+.docs-doc-id-product-info-switcher img[alt='Frontend selector devtools'],
 .docs-doc-id-product-info-switcher img[alt='Selector validation in Admin'] {
     max-width: 500px;
 }

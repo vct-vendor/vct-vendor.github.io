@@ -1,12 +1,16 @@
 *::-webkit-scrollbar {
-    background-color: var(--ifm-color-secondary-contrast-background);
+    background-color: var(--ifm-navbar-background-color);
     height: var(--ifm-scrollbar-size);
     width: var(--ifm-scrollbar-size);
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--ifm-color-emphasis-400) !important;
+    background-color: var(--ifm-color-emphasis-200) !important;
     border-radius: 0 !important;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+    background-color: var(--ifm-color-emphasis-400) !important;
 }
 
 *::-webkit-scrollbar-track {
@@ -14,5 +18,6 @@
 }
 
 .thin-scrollbar {
+    scroll-behavior: smooth;
     scrollbar-width: inherit !important;
 }

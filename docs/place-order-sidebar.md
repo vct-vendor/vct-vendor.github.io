@@ -1,10 +1,12 @@
 # Place Order Sidebar
 
+###### Module for Magento 2
+
 [Leave review](https://commercemarketplace.adobe.com/vct-placeordersidebar.html#bazaarvoice.reviews.tab) to help in further development
 
-[![VCT Place Order Sidebar Logo](../static/img/docs/Vct_PlaceOrderSidebar.svg)](https://commercemarketplace.adobe.com/vct-placeordersidebar.html)
+[![VCT Place Order Sidebar Logo](/img/docs/Vct_PlaceOrderSidebar.svg)](https://commercemarketplace.adobe.com/vct-placeordersidebar.html)
 
-- [Marketplace Page](https://commercemarketplace.adobe.com/vct-placeordersidebar.html)
+- [Marketplace](https://commercemarketplace.adobe.com/vct-placeordersidebar.html)
 - [Release Notes](https://commercemarketplace.adobe.com/vct-placeordersidebar.html#product.info.details.release_notes)
 - [Quality Report](https://commercemarketplace.adobe.com/vct-placeordersidebar.html#product.info.details.quality_report)
 
@@ -14,6 +16,8 @@
 
 If your shop is represented in the markets of D-A-CH region (Austria, Germany, Switzerland) this module may be interesting for you.
 
+<br/>
+
 > (1) On the websites used for electronic commerce with consumers, the trader is to indicate clearly and unequivocally at the latest at the beginning of the ordering process..., whether any delivery restrictions apply and which means of payment are accepted.
 >
 > (2) In the case of a consumer contract concluded in electronic commerce that has as its subject-matter a for-a-fee service provided by the trader, the trader must provide to the consumer the information..., and must do so in a clear and comprehensible manner, displaying it prominently, immediately before the consumer places the order.
@@ -21,6 +25,8 @@ If your shop is represented in the markets of D-A-CH region (Austria, Germany, S
 > (3) In case of a contract in accordance with subsection (2), the trader is to arrange the ordering situation such that the consumer explicitly confirms by their order that they enter into obligation to effect a payment. If the order is placed using a button, the obligation of the trader under sentence 1 is deemed to have been met only if this button is marked in an easy-to-read manner with nothing but the words "Order and Pay", or with equally unambiguous wording.
 >
 > – [German Civil Code (BGB) Section 312j Special obligations vis-à-vis consumers in electronic commerce](https://www.gesetze-im-internet.de/englisch_bgb/englisch_bgb.html#p1168)
+
+<br/>
 
 Original:
 
@@ -46,61 +52,79 @@ Original:
 
 ## Installation
 
-Use [Composer](https://getcomposer.org/doc/00-intro.md) to install the module or download the code for review:
+Use [Composer](https://getcomposer.org/doc/00-intro.md) to install the module or get the code for review:
 
-- [Log in](https://account.magento.com/customer/account/login) to your Marketplace account that purchased this module.
-- Add your [<kbd>Access Keys</kbd>](https://commercemarketplace.adobe.com/customer/accessKeys) for [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com) [repository](https://getcomposer.org/doc/05-repositories.md#repository) using the following command:
+- [Log in](https://account.magento.com/customer/account/login) to your Marketplace account that purchased the module.
+- Add or update your [<kbd>Access Keys</kbd>](https://commercemarketplace.adobe.com/customer/accessKeys)  i.e. `<Public Key>` and `<Private Key>` for [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com) [repository](https://getcomposer.org/doc/05-repositories.md#repository) in `auth.json` using the following command:
 
 ```bash
-composer config http-basic.repo.magento.com <Public Key> <Private Key>
+composer config http-basic.repo.magento.com <Public Key> <Private Key> # Add or update Access Keys in auth.json
+# e.g. composer config http-basic.repo.magento.com 39b747b8ab1d624582bb3n1a09deb489 31b9fce4cb78f523fd34aa3abb90c89c
 ```
 
-where `<Public Key>` and `<Private Key>` are your [<kbd>Access Keys</kbd>](https://commercemarketplace.adobe.com/customer/accessKeys).
-
-For example:
+- Execute the following commands:
 
 ```bash
-composer config http-basic.repo.magento.com 39b747b8ab1d624582bb3n1a09deb489 31b9fce4cb78f523fd34aa3abb90c89c
-```
-
-- Run the following commands:
-
-```bash
-composer require vct/placeordersidebar # Install module with Composer
-bin/magento setup:upgrade # Update the database schema and data
-
+composer require vct/placeordersidebar # Install the module using Composer
+bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
 bin/magento setup:static-content:deploy --force # Deploy static view files
-bin/magento setup:di:compile # Compile the code
 ```
 
-[Get your authentication keys](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=en) and [install an extension](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/extensions.html?lang=en) in the Magento documentation.
+- Execute only in [production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html?lang=en):
 
-:::tip[TIP]
-Help for common issues is on the [FAQ page](/faq#installation-and-update). For further assistance, please contact me by email [vct.vendor@gmail.com](mailto:vct.vendor@gmail.com?subject=Installation%20issue&body=To%20help%20you%20faster%2C%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AMagento%20version%20and%20edition%3A%20(e.g.%20Adobe%20Commerce%202.4.6-p6)%0APHP%20version%3A%20(e.g.%20PHP%208.2.8)%0AComposer%20version%3A%20(e.g.%202.2.21)).
+```bash
+bin/magento setup:di:compile # Recompile the code in production mode
+```
+
+- The module was installed in `vendor/vct` directory.
+
+:::tip[Tip]
+
+Help for common issues is on the [FAQ page](/faq#installation-and-update).<br/>
+For further assistance, please contact me by email [vct.vendor@gmail.com](mailto:vct.vendor@gmail.com?subject=Installation%20issue&body=To%20help%20you%20faster%2C%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AMagento%20version%20and%20edition%3A%20(e.g.%20Adobe%20Commerce%202.4.6-p6)%0APHP%20version%3A%20(e.g.%20PHP%208.2.8)%0AComposer%20version%3A%20(e.g.%202.2.21)).
+
 :::
+
+[Get your authentication keys](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=en) and [install an extension](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/extensions.html?lang=en) in the Adobe Commerce Documentation.
+
+### Update
+
+Use [Composer](https://getcomposer.org/doc/00-intro.md) to update the module or get the code for review:
+
+```bash
+composer update vct/placeordersidebar # Update the module using Composer
+bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
+bin/magento setup:static-content:deploy --force # Deploy static view files
+```
+
+Execute only in [production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html?lang=en):
+
+```bash
+bin/magento setup:di:compile # Recompile the code in production mode
+```
+
+[Upgrade an extension](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/extensions.html?lang=en) in the Adobe Commerce Documentation.
 
 ## Configuration
 
-:::danger[IMPORTANT]
+:::danger[Important]
 <kbd>Flush Magento Cache</kbd> in <kbd>SYSTEM</kbd> <kbd>Tools</kbd> <kbd>Cache Management</kbd> after configuration change to see the changes!
 :::
 
-[Clean and flush cache types](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-cache.html?lang=en#clean-and-flush-cache-types) in the Magento documentation.
+[Clean and flush cache types](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-cache.html?lang=en#clean-and-flush-cache-types) in the Adobe Commerce Documentation.
 
 ### <kbd>Enable</kbd> module
 
 <kbd>Stores</kbd> <kbd>SETTINGS</kbd> <kbd>Configuration</kbd> <kbd>VCT</kbd> <kbd>Place Order Sidebar</kbd> <kbd>Config</kbd>:
 
-| Config            | Type                             | Default       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|-------------------|----------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <kbd>Enable</kbd> | <kbd>Yes</kbd><br/><kbd>No</kbd> | <kbd>No</kbd> | <kbd>Yes</kbd> to:<ul><li>move an <kbd>Order Summary</kbd> block at the end of a checkout sidebar;</li><li>move a <kbd>Place Order</kbd> button after a <kbd>Order Summary</kbd> block;</li><li>display a checkout sidebar in mobile view;</li><li>translate <kbd>Place Order</kbd> button label as <kbd>Zahlungspflichtig bestellen</kbd> for stores in Austria, Germany, Switzerland.</li></ul><kbd>No</kbd> to make no changes or undo all changes. |
+| Config            | Type                             | Default       | Scope | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|-------------------|----------------------------------|---------------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <kbd>Enable</kbd> | <kbd>Yes</kbd><br/><kbd>No</kbd> | <kbd>No</kbd> |       | <kbd>Yes</kbd> to:<ul class="contains-task-list"><li class="task-list-item"><input type="checkbox" disabled checked/>Move an <kbd>Order Summary</kbd> block at the end of a checkout sidebar.</li><li class="task-list-item"><input type="checkbox" disabled checked/>Move a <kbd>Place Order</kbd> button after a <kbd>Order Summary</kbd> block.</li><li class="task-list-item"><input type="checkbox" disabled checked/>Display a checkout sidebar in mobile view.</li><li class="task-list-item"><input type="checkbox" disabled checked/>Translate <kbd>Place Order</kbd> button label as <kbd>Zahlungspflichtig bestellen</kbd> for stores in Austria, Germany, Switzerland.</li></ul><kbd>No</kbd> to make no changes or undo all changes. |
 
-## Examples
+For example, desktop view before and after
 
-### Desktop view before and after
+![Desktop view](/img/docs/place-order-sidebar/frontend-desktop.png)
 
-![Desktop view](../static/img/docs/place-order-sidebar/frontend-desktop.png)
+For example, mobile view before and after
 
-### Mobile view before and after
-
-![Mobile view](../static/img/docs/place-order-sidebar/frontend-mobile.png)
+![Mobile view](/img/docs/place-order-sidebar/frontend-mobile.png)
