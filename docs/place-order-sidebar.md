@@ -1,6 +1,6 @@
 # Place Order Sidebar
 
-###### Module for Magento 2
+###### <kbd>Module for Magento 2</kbd>
 
 [Leave review](https://commercemarketplace.adobe.com/vct-placeordersidebar.html#bazaarvoice.reviews.tab) to help in further development
 
@@ -14,7 +14,7 @@
 
 ## Overview
 
-If your shop is represented in the markets of D-A-CH region (Austria, Germany, Switzerland) this module may be interesting for you.
+If your shop is represented in the markets of D-A-CH region i.e. Austria, Germany, Switzerland, this module may be interesting for you.
 
 <br/>
 
@@ -43,14 +43,14 @@ Original:
 - [x] Move an <kbd>Order Summary</kbd> block at the end of the checkout sidebar.
 - [x] Move the <kbd>Place Order</kbd> button after the <kbd>Order Summary</kbd> block.
 - [x] Show the [checkout](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/glossary.html?lang=en#checkout) sidebar with <kbd>Order Summary</kbd> in mobile view, which is not displayed in the default [Luma theme](https://developer.adobe.com/commerce/frontend-core/guide/css/quickstart/#why-do-you-need-to-create-a-custom-theme).
-- [x] Translate <kbd>Place Order</kbd> button label as <kbd>Zahlungspflichtig bestellen</kbd> for stores of D-A-CH region (Austria, Germany, Switzerland).
+- [x] Translate <kbd>Place Order</kbd> button label as <kbd>Zahlungspflichtig bestellen</kbd> for stores of D-A-CH region i.e. Austria, Germany, Switzerland.
 
 ### Features
 
 - [x] Tested and verified by [Adobe Extension Quality Program](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program).
 - [x] Meets [Magento Coding Standard](https://developer.adobe.com/commerce/php/coding-standards).
 
-## Installation
+## Install
 
 Use [Composer](https://getcomposer.org/doc/00-intro.md) to install the module or get the code for review:
 
@@ -58,8 +58,8 @@ Use [Composer](https://getcomposer.org/doc/00-intro.md) to install the module or
 - Add or update your [<kbd>Access Keys</kbd>](https://commercemarketplace.adobe.com/customer/accessKeys)  i.e. `<Public Key>` and `<Private Key>` for [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com) [repository](https://getcomposer.org/doc/05-repositories.md#repository) in `auth.json` using the following command:
 
 ```bash
-composer config http-basic.repo.magento.com <Public Key> <Private Key> # Add or update Access Keys in auth.json
-# e.g. composer config http-basic.repo.magento.com 39b747b8ab1d624582bb3n1a09deb489 31b9fce4cb78f523fd34aa3abb90c89c
+composer config --auth http-basic.repo.magento.com <Public Key> <Private Key> # Add or update Access Keys in auth.json
+# e.g. composer config --auth http-basic.repo.magento.com 39b747b8ab1d624582bb3n1a09deb489 31b9fce4cb78f523fd34aa3abb90c89c
 ```
 
 - Execute the following commands:
@@ -80,19 +80,19 @@ bin/magento setup:di:compile # Recompile the code in production mode
 
 :::tip[Tip]
 
-Help for common issues is on the [FAQ page](/faq#installation-and-update).<br/>
-For further assistance, please contact me by email [vct.vendor@gmail.com](mailto:vct.vendor@gmail.com?subject=Installation%20issue&body=To%20help%20you%20faster%2C%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AMagento%20version%20and%20edition%3A%20(e.g.%20Adobe%20Commerce%202.4.6-p6)%0APHP%20version%3A%20(e.g.%20PHP%208.2.8)%0AComposer%20version%3A%20(e.g.%202.2.21)).
+Help for common issues is on the [FAQ page](/faq#uninstallation-and-update).<br/>
+For further assistance, contact me by email [vct.vendor@gmail.com](mailto:vct.vendor@gmail.com?subject=Installation%20issue&body=To%20help%20you%20faster%2C%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AMagento%20version%20and%20edition%3A%20(e.g.%20Adobe%20Commerce%202.4.6-p6)%0APHP%20version%3A%20(e.g.%20PHP%208.2.8)%0AComposer%20version%3A%20(e.g.%202.2.21)).
 
 :::
 
 [Get your authentication keys](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=en) and [install an extension](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/extensions.html?lang=en) in the Adobe Commerce Documentation.
 
-### Update
+## Update
 
 Use [Composer](https://getcomposer.org/doc/00-intro.md) to update the module or get the code for review:
 
 ```bash
-composer update vct/placeordersidebar # Update the module using Composer
+composer require --update-with-dependencies vct/placeordersidebar # Update the module using Composer
 bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
 bin/magento setup:static-content:deploy --force # Deploy static view files
 ```
@@ -105,21 +105,35 @@ bin/magento setup:di:compile # Recompile the code in production mode
 
 [Upgrade an extension](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/extensions.html?lang=en) in the Adobe Commerce Documentation.
 
-## Configuration
+## Uninstall
+
+Execute the following commands to uninstall a module:
+
+```bash
+bin/magento module:uninstall Vct_PlaceOrderSidebar # Uninstall module
+bin/magento setup:upgrade # Update the database schema and data
+bin/magento setup:static-content:deploy --force # Deploy static view files
+```
+
+[Uninstall modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=en) in the Adobe Commerce Documentation.
+
+## Configure
 
 :::danger[Important]
-<kbd>Flush Magento Cache</kbd> in <kbd>SYSTEM</kbd> <kbd>Tools</kbd> <kbd>Cache Management</kbd> after configuration change to see the changes!
+<kbd id="flush-magento-cache">Flush Magento Cache</kbd> in <kbd>System</kbd> <kbd>Cache Management</kbd> after configuration change to see the changes!
 :::
 
 [Clean and flush cache types](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-cache.html?lang=en#clean-and-flush-cache-types) in the Adobe Commerce Documentation.
 
-### <kbd>Enable</kbd> module
+### <kbd>Enable</kbd> a module
 
-<kbd>Stores</kbd> <kbd>SETTINGS</kbd> <kbd>Configuration</kbd> <kbd>VCT</kbd> <kbd>Place Order Sidebar</kbd> <kbd>Config</kbd>:
-
-| Config            | Type                             | Default       | Scope | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|-------------------|----------------------------------|---------------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <kbd>Enable</kbd> | <kbd>Yes</kbd><br/><kbd>No</kbd> | <kbd>No</kbd> |       | <kbd>Yes</kbd> to:<ul class="contains-task-list"><li class="task-list-item"><input type="checkbox" disabled checked/>Move an <kbd>Order Summary</kbd> block at the end of a checkout sidebar.</li><li class="task-list-item"><input type="checkbox" disabled checked/>Move a <kbd>Place Order</kbd> button after a <kbd>Order Summary</kbd> block.</li><li class="task-list-item"><input type="checkbox" disabled checked/>Display a checkout sidebar in mobile view.</li><li class="task-list-item"><input type="checkbox" disabled checked/>Translate <kbd>Place Order</kbd> button label as <kbd>Zahlungspflichtig bestellen</kbd> for stores in Austria, Germany, Switzerland.</li></ul><kbd>No</kbd> to make no changes or undo all changes. |
+|             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Config      | <kbd>Enable</kbd>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Path        | <kbd>Stores</kbd> <kbd>Configuration</kbd> <kbd>VCT</kbd> <kbd>Place Order Sidebar</kbd> <kbd>Config</kbd>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Type        | <kbd>Yes</kbd> <kbd>No</kbd>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Default     | <kbd>No</kbd>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Description | <kbd>Yes</kbd> to:<ul class="contains-task-list"><li class="task-list-item"><input type="checkbox" disabled checked/> Move an <kbd>Order Summary</kbd> block at the end of a checkout sidebar.</li><li class="task-list-item"><input type="checkbox" disabled checked/> Move a <kbd>Place Order</kbd> button after a <kbd>Order Summary</kbd> block.</li><li class="task-list-item"><input type="checkbox" disabled checked/> Display a checkout sidebar in mobile view.</li><li class="task-list-item"><input type="checkbox" disabled checked/> Translate <kbd>Place Order</kbd> button label as <kbd>Zahlungspflichtig bestellen</kbd> for stores of D-A-CH region i.e. Austria, Germany, Switzerland.</li></ul><kbd>No</kbd> to make no changes or undo all changes. |
 
 For example, desktop view before and after
 

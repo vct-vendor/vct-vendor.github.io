@@ -11,10 +11,6 @@ image: /img/logo.svg
 
 # FAQ
 
-:::info[Info]
-This page is regularly being updated with new information.
-:::
-
 ## Support
 
 :::tip[Tip]
@@ -22,9 +18,10 @@ This page is regularly being updated with new information.
 If you have not found the answer to your question:
 
 - Contact me by email [vct.vendor@gmail.com](mailto:vct.vendor@gmail.com?subject=FAQ).
-- Search for the answer to your question in [Adobe Commerce Documentation](https://experienceleague.adobe.com/docs/commerce.html?lang=en).
-- Search for the answer to your question in [Adobe Commerce Marketplace Help Center](https://marketplacesupport.magento.com).
 - [Submit a ticket](https://marketplacesupport.magento.com/hc/en-us/requests/new) in [Adobe Commerce Marketplace Help Center](https://marketplacesupport.magento.com).
+- Search for the answer to your question in:
+    - [Adobe Commerce Documentation](https://experienceleague.adobe.com/docs/commerce.html?lang=en).
+    - [Adobe Commerce Marketplace Help Center](https://marketplacesupport.magento.com).
 
 :::
 
@@ -34,12 +31,10 @@ If you have not found the answer to your question:
 
 :::danger[Important]
 
-You can request a refund only directly from the Adobe Commerce Marketplace.<br/>
-The refund period is **25 days** from the date of purchase, per the [Magento Marketplace Customer Agreement](https://www.adobe.com/content/dam/dx/us/en/products/magento/pdfs/Magento_Marketplace_Customer_Agreement_2021_11_01.pdf).
+- You can request a refund only directly from the Adobe Commerce Marketplace.
+- The refund period is **25 days** from the date of purchase, per the [Magento Marketplace Customer Agreement](https://www.adobe.com/content/dam/dx/us/en/products/magento/pdfs/Magento_Marketplace_Customer_Agreement_2021_11_01.pdf).
 
 :::
-
-See also [Customer Agreement of Marketplace](https://www.adobe.com/legal/terms/enterprise-licensing/magento-legacy-terms.html).<br/>
 
 You can request a refund by following these steps:
 
@@ -51,7 +46,8 @@ You can request a refund by following these steps:
 
 Marketplace Support will request information once the refund request is generated.
 
-[Requesting a Refund from Marketplace purchase](https://marketplacesupport.magento.com/hc/en-us/articles/360015771892-Requesting-a-Refund-from-Marketplace-purchase) in Commerce Marketplace Help Center.
+[Requesting a Refund from Marketplace purchase](https://marketplacesupport.magento.com/hc/en-us/articles/360015771892-Requesting-a-Refund-from-Marketplace-purchase) in Commerce Marketplace Help Center.<br/>
+[Customer Agreement of Marketplace](https://www.adobe.com/legal/terms/enterprise-licensing/magento-legacy-terms.html) in Magento Legacy Terms.
 
 ### Purchase to different accounts
 
@@ -63,24 +59,25 @@ Marketplace Support will request information once the refund request is generate
 
 :::
 
-[Transferring purchases to different accounts](https://marketplacesupport.magento.com/hc/en-us/articles/360034703471-Transferring-Purchases-to-Different-Accounts-) in Commerce Marketplace Help Center.
+[Transferring purchases to different accounts](https://marketplacesupport.magento.com/hc/en-us/articles/360034703471-Transferring-Purchases-to-Different-Accounts-) in Commerce Marketplace Help Center.<br/>
+[Customer Agreement of Marketplace](https://www.adobe.com/legal/terms/enterprise-licensing/magento-legacy-terms.html) in Magento Legacy Terms.
 
 ### Demo, trial version or test before purchase
 
 Currently, there is no demo site for the modules and there is no way to test the module before purchasing.
 
-Please read the module [documentation](/) and [FAQ](/faq) before purchasing the module.
+Please read the module [documentation](/) and the [FAQ page](/faq) before purchasing the module.
 
 However:
 
 - [x] [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com) has a [refund policy](/faq#refund-policy).
-- [x] For questions about the module, please contact me by email [vct.vendor@gmail.com](mailto:vct.vendor@gmail.com?subject=Demo%20or%20module%20test%20before%20purchase).
-- [x] Review the code or test of a free <kbd>[Change SKU Dynamically](/change-sku-dynamically)</kbd> module.
+- [x] You can contact me by email [vct.vendor@gmail.com](mailto:vct.vendor@gmail.com?subject=Demo%20or%20module%20test%20before%20purchase) for questions about the module.
+- [x] You can test or review the code of the free <kbd>[Change SKU Dynamically](/change-sku-dynamically)</kbd> module.
 - [x] Modules are tested and verified by [Adobe Extension Quality Program](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program).
 - [x] Modules meets [Magento Coding Standard](https://developer.adobe.com/commerce/php/coding-standards).
 - [x] There is detailed documentation for each module.
-- [x] Search for the answer to your question in [Adobe Commerce Marketplace Help Center](https://marketplacesupport.magento.com).
-- [x] [Submit a ticket](https://marketplacesupport.magento.com/hc/en-us/requests/new) in [Adobe Commerce Marketplace Help Center](https://marketplacesupport.magento.com).
+- [x] You can search for the answer to your question in [Adobe Commerce Marketplace Help Center](https://marketplacesupport.magento.com).
+- [x] You can <kbd>[Submit a Ticket](https://marketplacesupport.magento.com/hc/en-us/requests/new)</kbd> in [Adobe Commerce Marketplace Help Center](https://marketplacesupport.magento.com).
 
 ### Marketplace order invoice
 
@@ -93,6 +90,12 @@ The invoice does not supply the VAT or address of the seller as this is not requ
 [Marketplace order invoice](https://marketplacesupport.magento.com/hc/en-us/articles/360015772772) in Commerce Marketplace Help Center.
 
 ## Compatibility
+
+### System requirements
+
+:::warning[Warning]
+Please ensure that your test environment meets the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=en) of your Magento Open Source or Adobe Commerce version.
+:::
 
 ### Marketplace compatibility and maintenance policy
 
@@ -116,13 +119,7 @@ See [Compatibility Module Tracker](https://gitlab.hyva.io/hyva-public/module-tra
 Modules are currently not compatible with [Breeze themes](https://breezefront.com/themes).<br/>
 See [compatible modules](https://breezefront.com/extensions).
 
-## Installation and update
-
-### System requirements
-
-:::warning[Warning]
-Please ensure that your test environment meets the [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=en) of your Magento Open Source or Adobe Commerce version.
-:::
+## (Un)Installation and update
 
 ### Add or update Access Keys for Marketplace
 
@@ -131,27 +128,82 @@ Please ensure that your test environment meets the [system requirements](https:/
 - Add or update your [<kbd>Access Keys</kbd>](https://commercemarketplace.adobe.com/customer/accessKeys) i.e. `<Public Key>` and `<Private Key>` in `auth.json` using the following command:
 
 ```bash
-composer config http-basic.repo.magento.com <Public Key> <Private Key> # Add or update Access Keys in auth.json
-# e.g. composer config http-basic.repo.magento.com 39b747b8ab1d624582bb3n1a09deb489 31b9fce4cb78f523fd34aa3abb90c89c
+composer config --auth http-basic.repo.magento.com <Public Key> <Private Key> # Add or update Access Keys in auth.json
+# e.g. composer config --auth http-basic.repo.magento.com 39b747b8ab1d624582bb3n1a09deb489 31b9fce4cb78f523fd34aa3abb90c89c
 ```
 
 [Get your authentication keys](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=en) in the Adobe Commerce Documentation.
 
-### Available module versions
+### Get available modules list
 
-Available module versions are listed in the selector on <kbd>My Profile</kbd> <kbd>[My Purchases](https://commercemarketplace.adobe.com/downloadable/customer/products)</kbd> page in your Marketplace account that purchased the module.<br/>
+Execute the following command to show all available for install VCT modules:
+
+```bash
+composer show --available vct/* # Get available VCT modules list
+```
+
+### Get available module versions
+
+:::info[Info]
 Information about a current module version can be found on the module Marketplace page in <kbd>Technical Specifications</kbd> <kbd>Current Version</kbd> section.
+:::
+
+- [Log in](https://account.magento.com/customer/account/login) to your Marketplace account that purchased the module.
+- Available module versions are listed in the selector on <kbd>My Profile</kbd> <kbd>[My Purchases](https://commercemarketplace.adobe.com/downloadable/customer/products)</kbd> page.
+
+OR
+
+Execute the following command:
+
+```bash
+composer show --available vct/<package name>
+# e.g. composer show --available vct/simpleproducturl
+```
+
+### Install a module
+
+Use [Composer](https://getcomposer.org/doc/00-intro.md) to install the module or get the code for review:
+
+- [Log in](https://account.magento.com/customer/account/login) to your Marketplace account that purchased the module.
+- Add or update your [<kbd>Access Keys</kbd>](https://commercemarketplace.adobe.com/customer/accessKeys)  i.e. `<Public Key>` and `<Private Key>` for [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com) [repository](https://getcomposer.org/doc/05-repositories.md#repository) in `auth.json` using the following command:
+
+```bash
+composer config --auth http-basic.repo.magento.com <Public Key> <Private Key> # Add or update Access Keys in auth.json
+# e.g. composer config --auth http-basic.repo.magento.com 39b747b8ab1d624582bb3n1a09deb489 31b9fce4cb78f523fd34aa3abb90c89c
+```
+
+- Execute the following commands:
+
+```bash
+composer require vct/<module_name> # Install the module using Composer
+bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
+bin/magento setup:static-content:deploy --force # Deploy static view files
+```
+
+- Execute only in [production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html?lang=en):
+
+```bash
+bin/magento setup:di:compile # Recompile the code in production mode
+```
+
+- The module was installed in `vendor/vct` directory.
+
+[Get your authentication keys](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=en) and [install an extension](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/extensions.html?lang=en) in the Adobe Commerce Documentation.
 
 ### Install a specific module version
+
+:::tip[Tip]
+Whenever possible, always use the latest version of the module!
+:::
 
 Use [Composer](https://getcomposer.org/doc/00-intro.md) to install a specific module version or get the code for review:
 
 - [Log in](https://account.magento.com/customer/account/login) to your Marketplace account that purchased the module.
 - Available module versions are listed in the selector on <kbd>My Profile</kbd> <kbd>[My Purchases](https://commercemarketplace.adobe.com/downloadable/customer/products)</kbd> page.
-- Execute the following commands after specifying the package name and the version you need:
+- Execute the following commands after specifying the `<package name>` and the `<version>` you need:
 
 ```bash
-composer require <vct/packagename>:<version> # Install the module using Composer
+composer require vct/<package name>:<version> # Install the module using Composer
 # e.g. composer require vct/simpleproducturl:2.0.1
 bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
 bin/magento setup:static-content:deploy --force # Deploy static view files
@@ -167,13 +219,13 @@ bin/magento setup:di:compile # Recompile the code in production mode
 
 [Install an extension](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/extensions.html?lang=en) in the Adobe Commerce Documentation.
 
-### Update module
+### Update a module
 
 Use [Composer](https://getcomposer.org/doc/00-intro.md) to update the module or get the code for review:
 
 ```bash
-composer update <vct/packagename> # Update the module using Composer
-# e.g composer update vct/simpleproducturl
+composer require --update-with-dependencies vct/<package name> # Update the module using Composer
+# e.g composer require --update-with-dependencies vct/simpleproducturl
 bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
 bin/magento setup:static-content:deploy --force # Deploy static view files
 ```
@@ -186,16 +238,37 @@ bin/magento setup:di:compile # Recompile the code in production mode
 
 [Upgrade an extension](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/extensions.html?lang=en) in the Adobe Commerce Documentation.
 
-### Deprecated 1.x.x versions of VCT modules
+### Uninstall a module
+
+Execute the following commands to uninstall a module:
+
+```bash
+bin/magento module:uninstall Vct_<ModuleName> # Uninstall module
+# e.g. bin/magento module:uninstall Vct_ChangeSkuDynamically
+bin/magento setup:upgrade # Update the database schema and data
+bin/magento setup:static-content:deploy --force # Deploy static view files
+```
+
+[Uninstall modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=en) in the Adobe Commerce Documentation.
+
+## Configure
 
 :::danger[Important]
-Versions <kbd>1.x.x</kbd> of VCT modules are deprecated and no longer supported. Please use the current version of the module.
+<kbd id="flush-magento-cache">Flush Magento Cache</kbd> in <kbd>System</kbd> <kbd>Cache Management</kbd> after configuration change to see the changes!
+:::
+
+[Clean and flush cache types](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-cache.html?lang=en#clean-and-flush-cache-types) in the Adobe Commerce Documentation.
+
+### Deprecated 1.x.x module versions
+
+:::danger[Important]
+<kbd>1.x.x</kbd> module versions are deprecated and no longer supported. Use the [current version](#get-available-module-versions) of the module.
 :::
 
 ### Getting a module as ZIP archive
 
 :::warning[Warning]
-The only recommended way to install or update modules is using [Composer](https://getcomposer.org/doc/00-intro.md).
+The only recommended way to install or update module is using [Composer](https://getcomposer.org/doc/00-intro.md).
 :::
 
 If you require the source code in ZIP archive for any reason, please contact me by email [vct.vendor@gmail.com](mailto:vct.vendor@gmail.com?subject=Getting%20a%20module%20as%20ZIP%20archive).
@@ -204,42 +277,50 @@ If you require the source code in ZIP archive for any reason, please contact me 
 
 #### Support for Composer 1 is deprecated
 
-:::warning[Issue]
+::::warning[Issue]
 
 ```
 <warning>Warning from https://repo.packagist.org: Support for Composer 1 is deprecated and some packages will not be available. You should upgrade to Composer 2. See https://blog.packagist.com/deprecating-composer-1-support/</warning>
 ```
 
 [Deprecating Packagist.org support for Composer 1.x](https://blog.packagist.com/deprecating-composer-1-support) in Packagist.org blog.
-:::
 
-:::tip[FIX]
+:::tip[Fix 1]
 
-- Migrate Composer version 1 to version 2 if needed using command:
+[Migrate Composer](https://getcomposer.org/doc/03-cli.md#self-update-selfupdate) version 1 to version 2 using command:
 
 ```bash
 composer self-update --2
 ```
 
-- Install again.
+:::
+
+:::tip[Fix 2]
+
+[Clear cache](https://getcomposer.org/doc/03-cli.md#clear-cache-clearcache-cc) of Composer using command:
+
+```bash
+composer clear-cache
+```
 
 :::
+::::
 
 #### Could not find a matching version of package
 
-:::warning[Issue]
+::::warning[Issue]
 
 ```
-Could not find a matching version of package <vct/packagename>. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
+Could not find a matching version of package <vct/package name>. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
-
-:::
 
 :::tip[Fix 1]
 
-- [Log in](https://account.magento.com/customer/account/login) to your Marketplace account that purchased the module.
-- Ensure that <kbd>[Access Keys](https://commercemarketplace.adobe.com/customer/accessKeys)</kbd> are enabled.
-- Install again.
+[Clear cache](https://getcomposer.org/doc/03-cli.md#clear-cache-clearcache-cc) of Composer using command:
+
+```bash
+composer clear-cache
+```
 
 :::
 
@@ -253,13 +334,11 @@ composer --version
 
 - Check [system requirements](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=en) in the Adobe Commerce Documentation.
 
-- Migrate Composer version 1 to version 2 if needed using command:
+- If required by system requirements, [migrate Composer](https://getcomposer.org/doc/03-cli.md#self-update-selfupdate) version 1 to version 2 using command:
 
 ```bash
 composer self-update --2
 ```
-
-- Install again.
 
 :::
 
@@ -267,7 +346,7 @@ composer self-update --2
 
 - Ensure that `composer.json` file contains [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com) [repository](https://getcomposer.org/doc/05-repositories.md#repository):
 
-```txt title="composer.json" {4-5}
+```txt title="composer.json"
 ...
     "repositories": [
         {
@@ -279,15 +358,23 @@ composer self-update --2
 ```
 
 - Add `repo.magento.com` repository if it is missing.
-- Install again.
 
 :::
+
+:::tip[Fix 4]
+
+- [Log in](https://account.magento.com/customer/account/login) to your Marketplace account that purchased the module.
+- Ensure that <kbd>[Access Keys](https://commercemarketplace.adobe.com/customer/accessKeys)</kbd> are enabled.
+
+[Manage your authentication keys](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=en#manage-your-authentication-keys) in the Adobe Commerce Documentation.
+:::
+::::
 
 ## Module localization and translation
 
 Almost every text string in VCT modules can be translated into any language:
 
-- Copy the module's default translation dictionary for the US locale `vendor/vct/<package_name>/i18n/en_US.csv`.
+- Copy the module's default translation dictionary for the US locale `vendor/vct/<package name>/i18n/en_US.csv`.
 - Rename the default translation dictionary to the required locale e.g. `de_DE.csv`.
 - The translation dictionary has the following structure:
 
@@ -295,7 +382,7 @@ Almost every text string in VCT modules can be translated into any language:
 "Source string","Translated string"
 ```
 
-- To do the translation, leave the `"Source string"` entry unmodified, and translate the `"Translated string"` e.g.:
+- To do the translation, leave the `Source string` entry unmodified, and translate the `Translated string` e.g.:
 
 ```
 "Add to Cart","Zum Warenkorb hinzufügen"
@@ -303,16 +390,16 @@ Almost every text string in VCT modules can be translated into any language:
 "Address %1 of %2","Adresse %1 von %2"
 ```
 
-- <kbd>Flush Magento Cache</kbd> in <kbd>SYSTEM</kbd> <kbd>Tools</kbd> <kbd>Cache Management</kbd> afterwards.
+- <kbd id="flush-magento-cache">Flush Magento Cache</kbd> in <kbd>System</kbd> <kbd>Cache Management</kbd> afterwards.
 
 [Translations](https://developer.adobe.com/commerce/frontend-core/guide/translations) in the Adobe Commerce Documentation.
 
-## Configuration
+## Configure
 
 ### Flush Magento Cache
 
 :::danger[Important]
-<kbd>Flush Magento Cache</kbd> in <kbd>SYSTEM</kbd> <kbd>Tools</kbd> <kbd>Cache Management</kbd> after configuration change!
+<kbd id="flush-magento-cache">Flush Magento Cache</kbd> in <kbd>System</kbd> <kbd>Cache Management</kbd> after configuration change!
 :::
 
 [Clean and flush cache types](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-cache.html?lang=en#clean-and-flush-cache-types) in the Adobe Commerce Documentation.
@@ -322,7 +409,7 @@ Almost every text string in VCT modules can be translated into any language:
 - A configurable product allows the customer to choose options from <kbd>Dropdown</kbd>, <kbd>Multiple Select</kbd>, <kbd>Visual Swatch</kbd> and <kbd>Text Swatch</kbd> input types.
 - Configurable child products can be <kbd>Simple</kbd> or <kbd>Virtual</kbd> products without [custom options](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html?lang=en).
 - The thumbnail image in the shopping cart can be set to display the image from the configurable product record or from the product variant.
-- [Swatch attributes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/swatches.html?lang=en) can be configured to not display corresponding simple product images when the swatch is selected by setting the <kbd>Update Product Preview Image</kbd> option value to <kbd>No</kbd> in <kbd>Stores</kbd> <kbd>ATTRIBUTES</kbd> <kbd>Product</kbd> <kbd>[Attribute]</kbd> <kbd>Attribute Properties</kbd>.
+- [Swatch attributes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/swatches.html?lang=en) can be configured to not display corresponding simple product images when the swatch is selected by setting the <kbd>Update Product Preview Image</kbd> option value to <kbd>No</kbd> in <kbd>Stores</kbd> <kbd>ATTRIBUTES</kbd> <kbd>Product</kbd> <kbd>&lt;Attribute&gt;</kbd> <kbd>Attribute Properties</kbd>.
 - By default, the theme controls how the <kbd>Image Gallery</kbd> behaves when a customer switches between product variants:
     - <kbd>Blank theme</kbd> replaces the main product image with the image of the selected variant.
     - <kbd>Luma theme</kbd> prepend the selected variant images to the configurable product images.

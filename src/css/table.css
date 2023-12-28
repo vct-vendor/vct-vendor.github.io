@@ -3,13 +3,16 @@ table {
 }
 
 table th {
-    background-color: var(--ifm-color-emphasis-100);
-    color: var(--ifm-color-emphasis-800);
-    line-height: 1.25;
+    display: none;
 }
 
 table td {
     vertical-align: top;
+}
+
+table td:first-of-type {
+    background-color: var(--ifm-color-emphasis-100);
+    white-space: nowrap;
 }
 
 table thead tr {
@@ -20,21 +23,7 @@ table tr:nth-child(2n) {
     background: none;
 }
 
-table ul {
-    margin-bottom: .5rem;
-}
-
-td:nth-child(1),
-td:nth-child(2),
-td:nth-child(3) {
-    white-space: nowrap;
-}
-
 @media screen and (max-width: 1440px) {
-    td {
-        white-space: nowrap;
-    }
-
     table tr:hover td {
         background-color: var(--ifm-color-emphasis-100) !important;
     }

@@ -10,13 +10,8 @@ footer .col {
 }
 
 [class*='sidebar_'] {
-    font-size: 100% !important;
     max-height: calc(100vh - var(--ifm-navbar-height)) !important;
     top: calc(var(--ifm-navbar-height)) !important;
-}
-
-[class*='sidebarItemList_'] {
-    font-size: 100% !important;
 }
 
 [class*='sidebarItem_'] {
