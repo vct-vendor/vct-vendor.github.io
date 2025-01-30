@@ -1,1 +1,0 @@
-(self.webpackChunkvct_vendor_github_io=self.webpackChunkvct_vendor_github_io||[]).push([[525],{5525:()=>{}}]);
