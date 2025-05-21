@@ -2,7 +2,7 @@
 // `@type` JSDoc annotations allow editor autocompletion and type checking (when paired with `@ts-check`).
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 const config = {
     baseUrl: '/',
@@ -15,66 +15,61 @@ const config = {
     title: 'VCT',
     trailingSlash: false,
     url: 'https://vct-vendor.github.io',
-    staticDirectories: [
-        'public',
-        'static'
-    ],
+    staticDirectories: ['public', 'static'],
     i18n: {
         defaultLocale: 'en',
         locales: ['en']
     },
     presets: [
         [
-            'classic',
-            {
-                docs: {
-                    routeBasePath: '/',
-                    sidebarPath: './sidebars.js'
-                },
-                blog: false,
-                theme: {
-                    customCss: [
-                        require.resolve('./src/css/custom.css'),
+            'classic', {
+            docs: {
+                routeBasePath: '/',
+                sidebarPath: './sidebars.js'
+            },
+            blog: false,
+            theme: {
+                customCss: [
+                    require.resolve('./src/css/custom.css'),
 
-                        require.resolve('./src/css/blog.css'),
-                        require.resolve('./src/css/faq.css'),
-                        require.resolve('./src/css/footer.css'),
-                        require.resolve('./src/css/navbar.css'),
-                        require.resolve('./src/css/pagination.css'),
-                        require.resolve('./src/css/print.css'),
-                        require.resolve('./src/css/scroll.css'),
-                        require.resolve('./src/css/sidebar.css'),
-                        require.resolve('./src/css/table.css'),
-                        require.resolve('./src/css/toc.css'),
+                    require.resolve('./src/css/blog.css'),
+                    require.resolve('./src/css/faq.css'),
+                    require.resolve('./src/css/footer.css'),
+                    require.resolve('./src/css/navbar.css'),
+                    require.resolve('./src/css/pagination.css'),
+                    require.resolve('./src/css/print.css'),
+                    require.resolve('./src/css/scroll.css'),
+                    require.resolve('./src/css/sidebar.css'),
+                    require.resolve('./src/css/table.css'),
+                    require.resolve('./src/css/toc.css'),
 
-                        require.resolve('./src/css/home.css'),
-                        require.resolve('./src/css/modules/also-bought.css'),
-                        require.resolve('./src/css/modules/change-sku-dynamically.css'),
-                        require.resolve('./src/css/modules/place-order-sidebar.css'),
-                        require.resolve('./src/css/modules/price-diff.css'),
-                        require.resolve('./src/css/modules/product-info-switcher.css'),
-                        require.resolve('./src/css/modules/simple-product-url.css'),
+                    require.resolve('./src/css/home.css'),
+                    require.resolve('./src/css/modules/also-bought.css'),
+                    require.resolve('./src/css/modules/change-sku-dynamically.css'),
+                    require.resolve('./src/css/modules/place-order-sidebar.css'),
+                    require.resolve('./src/css/modules/price-diff.css'),
+                    require.resolve('./src/css/modules/product-info-switcher.css'),
+                    require.resolve('./src/css/modules/simple-product-url.css'),
 
-                        require.resolve('./src/css/plugins/docusaurus-search-local.css')
-                    ]
-                },
-                googleTagManager: {
-                    containerId: 'GTM-W65NLPHF'
-                },
-                gtag: {
-                    trackingID: 'G-Y2X91ZZSTX',
-                    anonymizeIP: true
-                },
-                sitemap: {
-                    changefreq: 'daily',
-                    priority: 0.5,
-                    ignorePatterns: [
-                        '/tags/**',
-                        '/pdf/**'
-                    ],
-                    filename: 'sitemap.xml'
-                }
+                    require.resolve('./src/css/plugins/docusaurus-search-local.css')
+                ]
+            },
+            googleTagManager: {
+                containerId: 'GTM-W65NLPHF'
+            },
+            gtag: {
+                trackingID: 'G-Y2X91ZZSTX',
+                anonymizeIP: true
+            },
+            sitemap: {
+                changefreq: 'daily',
+                priority: 0.5,
+                ignorePatterns: [
+                    '/tags/**', '/pdf/**'
+                ],
+                filename: 'sitemap.xml'
             }
+        }
         ]
     ],
     themeConfig: {
@@ -83,44 +78,35 @@ const config = {
             {
                 name: 'robots',
                 content: 'follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large'
-            },
-            {
+            }, {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1'
-            },
-            // { name: 'application-name', content: '', },
+            }, // { name: 'application-name', content: '', },
             // { name: 'msapplication-tooltip', content: '', },
             {
                 name: 'keywords',
                 content: 'VCT,Magento 2,Adobe Commerce,Module,Extension'
-            },
-            // { name: 'title', content: '', },
+            }, // { name: 'title', content: '', },
             // { name: 'description', content: '', },
             {
                 name: 'theme-color',
                 content: '#cb2434'
-            },
-            {
+            }, {
                 name: 'application-TileImage',
                 content: 'img/logo.svg'
-            },
-            {
+            }, {
                 name: 'msapplication-TileColor',
                 content: '#cb2434'
-            },
-            {
+            }, {
                 property: 'og:site_name',
                 content: 'VCT'
-            },
-            {
+            }, {
                 property: 'og:url',
                 content: 'https://vct-vendor.github.io'
-            },
-            {
+            }, {
                 property: 'og:locale',
                 content: 'en_US'
-            },
-            // { property: 'og:title', content: '', },
+            }, // { property: 'og:title', content: '', },
             // { property: 'og:type', content: 'website', },
             // { property: 'og:description', content: '', },
             // { property: 'og:image', content: '', },
@@ -129,12 +115,10 @@ const config = {
             {
                 name: 'twitter:site',
                 content: '@VCT'
-            },
-            {
+            }, {
                 name: 'twitter:creator',
                 content: '@VCT'
-            },
-            // { name: 'twitter:title', content: 'TITLE OF POST OR PAGE' },
+            }, // { name: 'twitter:title', content: 'TITLE OF POST OR PAGE' },
             {
                 name: 'twitter:card',
                 content: 'summary_large_image'
@@ -149,15 +133,13 @@ const config = {
                     rel: 'preconnect',
                     href: 'https://fonts.gstatic.com'
                 }
-            },
-            {
+            }, {
                 tagName: 'link',
                 attributes: {
                     rel: 'preconnect',
                     href: 'https://fonts.googleapis.com'
                 }
-            },
-            {
+            }, {
                 tagName: 'script',
                 attributes: {
                     type: 'application/ld+json'
@@ -197,33 +179,19 @@ const config = {
                     label: 'Docs',
                     to: '/',
                     position: 'left'
-                },
-                {
+                }, {
                     label: 'FAQ',
                     to: '/faq',
                     position: 'left'
-                },
-                // {
-                //     label: 'Blog',
-                //     to: '/blog',
-                //     position: 'left',
-                // },
-                {
+                }, {
                     label: 'Feature Request',
                     to: '/feature',
                     position: 'left'
-                },
-                {
-                    label: 'Support',
-                    href: 'mailto:vct.vendor@gmail.com?subject=Support',
+                }, {
+                    label: 'Contact / Support',
+                    href: 'mailto:vct.vendor@gmail.com',
                     position: 'left'
-                },
-                {
-                    label: 'Contact',
-                    href: 'mailto:vct.vendor@gmail.com?subject=Contact',
-                    position: 'left'
-                },
-                {
+                }, {
                     label: 'VCT on Marketplace',
                     href: 'https://commercemarketplace.adobe.com/partner/VCT#partner.products.info',
                     position: 'left'
@@ -238,67 +206,59 @@ const config = {
                         {
                             label: 'Docs',
                             to: '/'
-                        },
-                        {
+                        }, {
                             label: 'FAQ',
                             to: '/faq'
-                        },
-                        // {
-                        //     label: 'Blog',
-                        //     to: '/blog',
-                        // },
-                        {
+                        }, {
                             label: 'Feature Request',
                             to: '/feature'
-                        },
-                        {
-                            label: 'Support',
-                            href: 'mailto:vct.vendor@gmail.com?subject=Support',
-                            position: 'left'
-                        },
-                        {
-                            label: 'Contact',
-                            href: 'mailto:vct.vendor@gmail.com?subject=Contact'
                         }
                     ]
-                },
-                {
+                }, {
+                    items: [
+                        {
+                            label: 'Contact / Support',
+                            href: 'mailto:vct.vendor@gmail.com',
+                            position: 'left'
+                        }, {
+                            label: 'Privacy policy',
+                            to: '/privacy-policy'
+                        }
+                    ]
+                }, {
                     items: [
                         {
                             label: 'VCT on Marketplace',
                             href: 'https://commercemarketplace.adobe.com/partner/VCT#partner.products.info'
-                        },
-                        {
+                        }, {
                             label: 'Marketplace Help Center',
                             href: 'https://marketplacesupport.magento.com'
-                        },
-                        {
+                        }, {
                             label: 'Adobe Commerce Documentation',
                             href: 'https://experienceleague.adobe.com/docs/commerce.html?lang=en'
-                        },
-                        {
+                        }, {
                             label: 'Adobe Commerce Developer Documentation',
                             href: 'https://developer.adobe.com/commerce/docs'
                         }
                     ]
                 }
             ],
-            copyright: `© ${new Date().getFullYear()} VCT. All rights reserved. <a href="/privacy-policy">Privacy policy</a>`
+            copyright: `© ${new Date().getFullYear()} VCT. All rights reserved`
         }
     },
     themes: [
         [
-            '@easyops-cn/docusaurus-search-local',
-            {
-                docsRouteBasePath: '/',
-                explicitSearchResultPath: true,
-                hashed: true,
-                highlightSearchTermsOnTargetPage: true,
-                ignoreCssSelectors: ['[class*=\'admonitionHeading_\']'],
-                indexPages: true,
-                searchResultContextMaxLength: 70
-            }
+            '@easyops-cn/docusaurus-search-local', {
+            docsRouteBasePath: '/',
+            explicitSearchResultPath: true,
+            hashed: true,
+            highlightSearchTermsOnTargetPage: true,
+            ignoreCssSelectors: ['[class*=\'admonitionHeading_\']'],
+            indexPages: true,
+            searchResultContextMaxLength: 70
+        }
         ]
     ]
 };
+
 export default config;

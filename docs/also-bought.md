@@ -65,26 +65,25 @@ Use [Composer](https://getcomposer.org/doc/00-intro.md) to install the module or
 - [Log in](https://account.magento.com/customer/account/login) to your Marketplace account that purchased the module.
 - Add or update your [<kbd>Access Keys</kbd>](https://commercemarketplace.adobe.com/customer/accessKeys)  i.e. `<Public Key>` and `<Private Key>` for [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com) [repository](https://getcomposer.org/doc/05-repositories.md#repository) in `auth.json` using the following command:
 
-```bash
-composer config --auth http-basic.repo.magento.com <Public Key> <Private Key> # Add or update Access Keys in auth.json
-# e.g. composer config --auth http-basic.repo.magento.com 39b747b8ab1d624582bb3n1a09deb489 31b9fce4cb78f523fd34aa3abb90c89c
-```
-
+    ```shell
+    composer config --auth http-basic.repo.magento.com <Public Key> <Private Key> # Add or update Access Keys in auth.json
+    # e.g.:
+    # composer config --auth http-basic.repo.magento.com 39b747b8ab1d624582bb3n1a09deb489 31b9fce4cb78f523fd34aa3abb90c89c
+    ```
 - Execute the following commands:
 
-```bash
-composer require vct/alsobought # Install the module using Composer
-bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
-bin/magento setup:static-content:deploy --force # Deploy static view files
-```
-
+    ```shell
+    composer require vct/alsobought # Install the module using Composer
+    bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
+    bin/magento setup:static-content:deploy --force # Deploy static view files
+    ```
 - The module was installed in `vendor/vct` directory.
 
 :::info[Info]
 
 Optional execute in [production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html?lang=en):
 
-```bash
+```shell
 bin/magento setup:di:compile # Recompile the code in production mode
 ```
 
@@ -101,19 +100,18 @@ For further assistance, contact me by email [vct.vendor@gmail.com](mailto:vct.ve
 
 ## Update
 
-Use [Composer](https://getcomposer.org/doc/00-intro.md) to update the module or get the code for review:
+- Use [Composer](https://getcomposer.org/doc/00-intro.md) to update the module:
 
-```bash
-composer require --update-with-dependencies vct/alsobought # Update the module using Composer
-bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
-bin/magento setup:static-content:deploy --force # Deploy static view files
-```
+    ```shell
+    composer require --update-with-dependencies vct/alsobought # Update the module using Composer
+    bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
+    bin/magento setup:static-content:deploy --force # Deploy static view files
+    ```
+- Execute only in [production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html?lang=en):
 
-Execute only in [production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html?lang=en):
-
-```bash
-bin/magento setup:di:compile # Recompile the code in production mode
-```
+    ```shell
+    bin/magento setup:di:compile # Recompile the code in production mode
+    ```
 
 [Upgrade an extension](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/extensions.html?lang=en) in the Adobe Commerce Documentation.
 
@@ -121,7 +119,7 @@ bin/magento setup:di:compile # Recompile the code in production mode
 
 Execute the following commands to uninstall a module:
 
-```bash
+```shell
 bin/magento module:uninstall Vct_AlsoBought # Uninstall module
 bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
 bin/magento setup:static-content:deploy --force # Deploy static view files
@@ -361,26 +359,26 @@ Set <kbd>Content</kbd> <kbd>Widgets</kbd> <kbd>&lt;VCT Also Bought Widget&gt;</k
 
 ## Examples
 
-###### <kbd>Sidebar Main</kbd> container
+### <kbd>Sidebar Main</kbd> container
 
 ![Sidebar Main container](/img/docs/also-bought/frontend-sidebar-main-hover.png)
 
-###### <kbd>Mini-cart Promotion</kbd> container
+### <kbd>Mini-cart Promotion</kbd> container
 
 ![Mini-cart Promotion container](/img/docs/also-bought/frontend-mini-cart.png)
 
-###### <kbd>Before Page Footer</kbd> container
+### <kbd>Before Page Footer</kbd> container
 
 ![Before Page Footer container](/img/docs/also-bought/frontend-before-page-footer.png)
 
-###### Related products block
+### Related products block
 
 ![Related products block](/img/docs/also-bought/frontend-related.png)
 
-###### Up-Sell products block
+### Up-Sell products block
 
 ![Up-Sell products block](/img/docs/also-bought/frontend-up-sell.png)
 
-###### Cross-Sell products block
+### Cross-Sell products block
 
 ![Cross-Sell products block](/img/docs/also-bought/frontend-cross-sell.png)

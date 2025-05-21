@@ -56,26 +56,25 @@ Use [Composer](https://getcomposer.org/doc/00-intro.md) to install the module or
 - [Log in](https://account.magento.com/customer/account/login) to your Marketplace account that purchased the module.
 - Add or update your [<kbd>Access Keys</kbd>](https://commercemarketplace.adobe.com/customer/accessKeys)  i.e. `<Public Key>` and `<Private Key>` for [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com) [repository](https://getcomposer.org/doc/05-repositories.md#repository) in `auth.json` using the following command:
 
-```bash
-composer config --auth http-basic.repo.magento.com <Public Key> <Private Key> # Add or update Access Keys in auth.json
-# e.g. composer config --auth http-basic.repo.magento.com 39b747b8ab1d624582bb3n1a09deb489 31b9fce4cb78f523fd34aa3abb90c89c
-```
-
+    ```shell
+    composer config --auth http-basic.repo.magento.com <Public Key> <Private Key> # Add or update Access Keys in auth.json
+    # e.g.:
+    # composer config --auth http-basic.repo.magento.com 39b747b8ab1d624582bb3n1a09deb489 31b9fce4cb78f523fd34aa3abb90c89c
+    ```
 - Execute the following commands:
 
-```bash
-composer require vct/simpleproducturl ^2.0 # Install the module using Composer
-bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
-bin/magento setup:static-content:deploy --force # Deploy static view files
-```
-
+    ```shell
+    composer require vct/simpleproducturl # Install the module using Composer
+    bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
+    bin/magento setup:static-content:deploy --force # Deploy static view files
+    ```
 - The module was installed in `vendor/vct` directory.
 
 :::info[Info]
 
 Optional execute in [production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html?lang=en):
 
-```bash
+```shell
 bin/magento setup:di:compile # Recompile the code in production mode
 ```
 
@@ -92,19 +91,18 @@ For further assistance, contact me by email [vct.vendor@gmail.com](mailto:vct.ve
 
 ## Update
 
-Use [Composer](https://getcomposer.org/doc/00-intro.md) to update the module or get the code for review:
+- Use [Composer](https://getcomposer.org/doc/00-intro.md) to update the module or get the code for review:
 
-```bash
-composer require --update-with-dependencies vct/simpleproducturl # Update the module using Composer
-bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
-bin/magento setup:static-content:deploy --force # Deploy static view files
-```
+    ```shell
+    composer require --update-with-dependencies vct/simpleproducturl # Update the module using Composer
+    bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
+    bin/magento setup:static-content:deploy --force # Deploy static view files
+    ```
+- Execute only in [production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html?lang=en):
 
-Execute only in [production mode](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/set-mode.html?lang=en):
-
-```bash
-bin/magento setup:di:compile # Recompile the code in production mode
-```
+    ```shell
+    bin/magento setup:di:compile # Recompile the code in production mode
+    ```
 
 [Upgrade an extension](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/extensions.html?lang=en) in the Adobe Commerce Documentation.
 
@@ -112,7 +110,7 @@ bin/magento setup:di:compile # Recompile the code in production mode
 
 Execute the following commands to uninstall a module:
 
-```bash
+```shell
 bin/magento module:uninstall Vct_SimpleProductUrl # Uninstall module
 bin/magento setup:upgrade --safe-mode=1 # Update the database schema and data
 bin/magento setup:static-content:deploy --force # Deploy static view files
@@ -186,7 +184,7 @@ For example, a product has the URL  `/mona-pullover-hoodie-s-green.html`. This p
 - `/mona-pullover-hoodie-s-green.html` instead of `/mona-pullover-hoodie.html#143=167&93=53`.
 - `/mona-pullover-hoodie-s-red.html` instead of `/mona-pullover-hoodie.html#143=167&93=54`.
 
-For example, Parent URL, <kbd>Parent URL + Selected Variant Options</kbd>, <kbd>Selected Variant URL</kbd>:
+#### Parent URL, Parent URL \+ Selected Variant Options, Selected Variant URL
 
 ![Selected Variant URL](/img/docs/simple-product-url/frontend-urls.png)
 

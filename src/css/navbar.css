@@ -52,7 +52,7 @@
 }
 
 .navbar__logo {
-    background: url(/img/logo.svg) center;
+    background: url('/img/logo.svg') center;
     background-size: 64px 64px;
     height: var(--ifm-navbar-height);
     margin: 0 .4rem 0 .375rem;

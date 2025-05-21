@@ -1,5 +1,6 @@
 .col--7 {
     --ifm-col-width: calc(9 / 12 * 100%);
+
     padding-left: 0;
     padding-right: 2em;
     padding-top: 1rem;
@@ -34,7 +35,7 @@ footer .col {
 }
 
 article footer {
-    margin: 2rem 0 0 0 !important;
+    margin: 2rem 0 0 !important;
 }
 
 article footer .text--right {
@@ -42,13 +43,10 @@ article footer .text--right {
 }
 
 [class*='tagRegular_'] {
-    padding: .25rem .5rem !important;
-}
-
-[class*='tagRegular_'] {
     background-color: var(--ifm-color-primary);
     border-color: transparent;
     color: #fff;
+    padding: .25rem .5rem !important;
 }
 
 [class*='tag_'] {

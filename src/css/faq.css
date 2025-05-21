@@ -3,3 +3,7 @@
     overflow-wrap: anywhere;
     white-space: pre-wrap;
 }
+
+.docs-doc-id-faq [class*='docItemCol_'] {
+    padding: 0 0 0 8.65rem;
+}

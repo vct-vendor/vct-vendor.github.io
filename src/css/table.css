@@ -23,7 +23,7 @@ table tr:nth-child(2n) {
     background: none;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (width <= 1440px) {
     table tr:hover td {
         background-color: var(--ifm-color-emphasis-100) !important;
     }

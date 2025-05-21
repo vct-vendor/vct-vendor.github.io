@@ -7,12 +7,9 @@
     display: none !important;
 }
 
-.docs-doc-id-home main {
-}
-
-.docs-doc-id-home img {
-    margin: 0 2.5rem 3rem 2.5rem;
-    max-width: 11rem !important;
+.docs-doc-id-home p img {
+    margin: 0 2rem 3rem;
+    max-width: 9rem !important;
 }
 
 .docs-doc-id-home [class*='docMainContainer_'] {
@@ -25,11 +22,15 @@
     padding: 0 1rem;
 }
 
+.docs-doc-id-home article {
+    margin-bottom: 0;
+}
+
 .docs-doc-id-home article p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 4rem 0 0 0;
+    margin: 3rem 0 0;
 }
 
 .docs-doc-id-home .col.col--3 {

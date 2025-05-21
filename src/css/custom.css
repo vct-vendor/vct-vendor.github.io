@@ -37,10 +37,10 @@
     --ifm-footer-padding-vertical: .5rem !important;
     --ifm-global-radius: none;
     --ifm-heading-font-weight: var(--ifm-font-weight-bold);
-    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, .1);
+    --docusaurus-highlighted-code-line-bg: rgb(0 0 0 / 10%);
     --ifm-leading-desktop: 1;
     --ifm-magento: #cd2433;
-    --ifm-magento-second: rgba(255, 255, 255, .5);
+    --ifm-magento-second: rgb(255 255 255 / 50%);
     --ifm-menu-color: var(--ifm-color-emphasis-700);
     --ifm-navbar-height: 32px;
     --ifm-navbar-item-padding-horizontal: 1rem;
@@ -67,8 +67,8 @@
     --ifm-color-primary-lighter: #7fb2fe;
     --ifm-color-primary-lightest: #7fb2fe;
     --ifm-color-secondary-contrast-background: #2b2d30 !important;
-    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, .3);
-    --ifm-magento-second: rgb(30, 31, 34, .5);
+    --docusaurus-highlighted-code-line-bg: rgb(0 0 0 / 30%);
+    --ifm-magento-second: rgb(30 31 34 / 50%);
     --ifm-navbar-background-color: #1e1f22 !important;
 }
 
@@ -93,7 +93,7 @@ h6 {
     color: var(--ifm-color-emphasis-900) !important;
     font-weight: var(--ifm-font-weight-normal);
     line-height: 1.25;
-    margin: 5rem 0 .75rem 0 !important;
+    margin: 5rem 0 .75rem !important;
     padding: 0 !important;
 }
 
@@ -142,31 +142,37 @@ header + p + p a img {
 
 h1 {
     font-size: 2.5rem !important;
+
     --ifm-h1-font-size: 2rem !important;
 }
 
 h2 {
     font-size: 2.25rem !important;
+
     --ifm-h2-font-size: 1.75rem !important;
 }
 
 h3 {
     font-size: 1.75rem !important;
+
     --ifm-h3-font-size: 1.5rem !important;
 }
 
 h4 {
     font-size: 1.5rem !important;
+
     --ifm-h4-font-size: 1.25rem !important;
 }
 
 h5 {
     font-size: 1rem !important;
+
     --ifm-h5-font-size: 1rem !important;
 }
 
 h6 {
     font-size: 1.35rem !important;
+
     --ifm-h6-font-size: 1.35rem !important;
 }
 
@@ -269,6 +275,10 @@ article li ul {
     margin-left: 0 !important;
 }
 
+[class*='codeBlockContainer_'] {
+    margin-bottom: 0 !important;
+}
+
 p + .contains-task-list {
     margin-bottom: 1.5rem;
     margin-top: -.75rem;
@@ -276,7 +286,7 @@ p + .contains-task-list {
 
 p + ul,
 p + [class*='codeBlockContainer_'] {
-    margin-top: -.75rem !important;
+    margin-top: -.5rem !important;
 }
 
 .theme-code-block + ul {
@@ -310,6 +320,7 @@ blockquote {
 
 .col--2 {
     --ifm-col-width: calc(3 / 12 * 100%);
+
     padding: 0;
 }
 
@@ -319,12 +330,13 @@ blockquote {
 
 .col--8 {
     --ifm-col-width: calc(9 / 12 * 100%);
+
     padding-bottom: 0;
     padding-top: 1rem;
 }
 
 [class*='docItemCol_'] {
-    padding: 0 0 0 1rem;
+    padding: 0 1rem 0 2rem;
 }
 
 .contains-task-list {
@@ -345,7 +357,7 @@ kbd {
     color: inherit !important;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1rem;
-    padding: .15rem .35rem .2rem .35rem;
+    padding: .15rem .35rem .2rem;
 }
 
 sup {
@@ -362,8 +374,8 @@ kbd.required::after {
 
 kbd.danger {
     background-color: var(--ifm-alert-background-color) !important;
-    border: 1px solid rgba(225, 50, 56, .35) !important;
-    box-shadow: inset 0 -2px 0 rgba(225, 50, 56, .35) !important;
+    border: 1px solid rgb(225 50 56 / 35%) !important;
+    box-shadow: inset 0 -2px 0 rgb(225 50 56 / 35%) !important;
 }
 
 .star {
@@ -441,7 +453,7 @@ code {
 
 [class*='admonition_'] {
     display: table;
-    padding: .6rem .75rem .75rem .75rem;
+    padding: .6rem .75rem .75rem;
 }
 
 [class*='admonitionIcon_'] {
@@ -491,25 +503,26 @@ code {
 .theme-admonition {
     border-width: 1px !important;
     box-shadow: none;
+    margin-bottom: .75rem;
     padding: 0;
 }
 
 .theme-admonition [class*='admonitionHeading_'] {
-    padding: .25rem .5rem;
+    padding: .35rem .75rem;
 }
 
 .theme-admonition [class*='admonitionContent_'] {
     background-color: var(--ifm-background-color);
-    padding: .5rem;
+    padding: .5rem .75rem;
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (width <= 996px) {
     :root {
         --ifm-font-family-monospace: 'Iosevka' !important;
     }
 
     [class*='docItemCol_'] {
-        padding: 0 .15rem !important;
+        padding: 0 .5rem !important;
     }
 
     .col--8 {
@@ -521,7 +534,7 @@ code {
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (width <= 1440px) {
     img {
         max-width: 100% !important;
     }

@@ -4,7 +4,7 @@ title: Home
 sidebar_class_name: sidebar-home
 ---
 
-# <kbd>VCT</kbd> modules for Magento 2 / Adobe Commerce
+# Modules for Magento 2 / Adobe Commerce
 
 [![VCT Change SKU Dynamically Logo](/img/docs/vct_changeskudynamically.svg)](/change-sku-dynamically)
 [![VCT Simple Product URL Logo](/img/docs/vct_simpleproducturl.svg)](/simple-product-url)
