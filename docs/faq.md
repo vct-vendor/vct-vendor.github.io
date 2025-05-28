@@ -17,12 +17,12 @@ image: /img/logo.svg
 
 If you have not found the answer to your question:
 
-- Contact me by email [vct.vendor@gmail.com](mailto:vct.vendor@gmail.com?subject=Issue&body=To%20help%20you%20faster%2C%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AMagento%20version%20and%20edition%3A%20(e.g.%20Adobe%20Commerce%202.4.6-p6)%0APHP%20version%3A%20(e.g.%20PHP%208.2.8)%0AComposer%20version%3A%20(e.g.%202.2.21)).
-- [Submit a ticket](https://marketplacesupport.magento.com/hc/en-us/requests/new) in [Adobe Commerce Marketplace Help Center](https://marketplacesupport.magento.com).
-- Search for the answer to your question in:
-    - [Adobe Commerce Documentation](https://experienceleague.adobe.com/docs/commerce.html?lang=en).
-    - [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs).
-    - [Adobe Commerce Marketplace Help Center](https://marketplacesupport.magento.com).
+- [x] Contact me by email [vct.vendor@gmail.com](mailto:vct.vendor@gmail.com?subject=Issue&body=To%20help%20you%20faster%2C%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AMagento%20version%20and%20edition%3A%20(e.g.%20Adobe%20Commerce%202.4.6-p6)%0APHP%20version%3A%20(e.g.%20PHP%208.2.8)%0AComposer%20version%3A%20(e.g.%202.2.21)).
+- [x] [Submit a ticket](https://experienceleague.adobe.com/home?support-tab=open-ticket#support) in [Adobe Commerce Marketplace Help Center](https://marketplacesupport.magento.com).
+- [x] Search for the answer to your question in:
+    - [x] [Adobe Commerce Documentation](https://experienceleague.adobe.com/docs/commerce.html?lang=en).
+    - [x] [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs).
+    - [x] [Adobe Commerce Marketplace Help Center](https://marketplacesupport.magento.com).
 
 :::
 
